@@ -31,7 +31,7 @@ function handleClick(e) {
 const add = (val1, val2) => (val1 + val2).toString(2);
 const subtract = (val1, val2) => (val1 - val2).toString(2);
 const multiply = (val1, val2) => (val2 * val2).toString(2);
-const devide = (val1, val2) => (val1 / val2).toString(2);
+const devide = (val1, val2) => Math.floor((val1 / val2).toString(2));
 
 function math(val1, operator, val2) {
   // convert nums to base 10 prior to passing
